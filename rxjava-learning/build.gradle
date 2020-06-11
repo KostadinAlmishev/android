@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'io.rxjava'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.1"
+}
+
+application {
+    mainClassName = 'io.rxjava.Main'
+}
+
